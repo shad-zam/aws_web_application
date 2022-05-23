@@ -1,0 +1,12 @@
+create_vpc = true
+name = "arshad-challenge"
+cidr = "192.168.1.0/24"
+private_subnets_cidrs = ["192.168.1.0/27","192.168.1.32/27","192.168.1.64/27"]
+public_subnets_cidrs = ["192.168.1.96/27","192.168.1.128/26","192.168.1.192/26"]
+min_size = 1
+max_size = 3
+desired_capacity = 1
+wait_for_elb_capacity = 1
+key_name = "new_arshad"
+region = "eu-west-1"
+target_value = 80
